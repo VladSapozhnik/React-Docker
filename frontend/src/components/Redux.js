@@ -2,7 +2,7 @@
 import React from "react";
 import { createStore } from 'redux'
 import {rootReducer} from "../redux/rootReducer";
-import {INCREMENT, DECREMENT} from "../redux/types";
+import {async_increment, decrement, increment} from "../redux/actions";
 
 function Redux () {
     const store = createStore(rootReducer, 0)
@@ -10,12 +10,12 @@ function Redux () {
 /*    window.store = store*/
 
     /*const [count, setCount] = useState(1);*/
-    function increment() {
-        store.dispatch({type: INCREMENT})
+    function inc() {
+        store.dispatch(increment())
     }
 
-    function decrement () {
-        store.dispatch({type: DECREMENT})
+    function decr () {
+        store.dispatch(decrement())
     }
 
    store.subscribe(() => {
@@ -25,8 +25,9 @@ function Redux () {
     return (
         <div>
             <div>{store.getState()}</div>
-            <div className="btn" onClick={increment}>increment</div>
-            <div className="btn" onClick={decrement}>decrement</div>
+            <div className="btn" onClick={inc}>increment</div>
+            <div className="btn" onClick={decr}>decrement</div>
+            <div className="btn" onClick={() => store.dispatch(async_increment())}>ASYNC</div>
             <div onClick={() => console.log(store.getState())} className="btn">result</div>
         </div>
     )
