@@ -1,0 +1,11 @@
+import {DECREMENT, INCREMENT} from "./types";
+
+export function rootReducer(state, actions) {
+    if (actions.type === INCREMENT) {
+        return state + 1
+    } else if (actions.type === DECREMENT) {
+        return state - 1
+    }
+
+    return state
+}
