@@ -6,6 +6,7 @@ import Popup from "./components/Popup";
 import Form from "./components/Form";
 import AxiosDate from "./components/AxiosDate";
 import Redux from "./components/Redux";
+import Tabs from "./components/Tabs";
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
   return (
       <div className="wrapper">
           <div className="container">
+              <Tabs/>
               <Redux/>
               <AxiosDate/>
               <Form/>
