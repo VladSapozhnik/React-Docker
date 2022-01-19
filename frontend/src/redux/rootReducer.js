@@ -15,11 +15,10 @@ import {combineReducers} from "redux";
 //
 //     return state
 // }
-
-function counterReducer(state = 42, actions) {
-    if (actions.type === INCREMENT) {
+function counterReducer(state = 42, action) {
+    if (action.type === INCREMENT) {
         return state + 1
-    } else if (actions.type === DECREMENT) {
+    } else if (action.type === DECREMENT) {
         return state - 1
     }
 
@@ -34,8 +33,8 @@ const initialThemeState = {
 function themeReducer(state = initialThemeState, action) {
     switch (action.type) {
         case CHANGE_THEME:
-            return {...state, value: 'dark'}
-
+            // return {...state, value: 'dark'}
+            return {...state, value: action.payload}
         default: return state
     }
 }

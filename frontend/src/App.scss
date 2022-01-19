@@ -25,6 +25,18 @@
   }
 }
 
+.wrapper {
+  background-color: #ffffff;
+  color: #000000;
+  &.dark {
+    background-color: #2b2a2a;
+    color: #ffffff !important;
+    & .btn {
+      color: #ffffff;
+    }
+  }
+}
+
 .container {
   max-width: 1024px;
   display: flex;
