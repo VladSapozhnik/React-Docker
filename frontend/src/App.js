@@ -7,6 +7,7 @@ import Form from "./components/Form";
 import AxiosDate from "./components/AxiosDate";
 import Redux from "./components/Redux";
 import Tabs from "./components/Tabs";
+import Accordion from "./components/Accordion";
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
       <div className="wrapper">
           <div className="container">
               <Tabs/>
+              <Accordion/>
               <Redux/>
               <AxiosDate/>
               <Form/>
