@@ -36,16 +36,28 @@ function AxiosDate () {
         })
     }*/
 
+    // const [test, setTest] = useState('dsadsa')
+    // console.log(test)
+
+    const [input, setInput] = useState('')
+
+
+    function sort () {
+        return posts.filter((item) => {
+            return item.title.toLowerCase().match(input.toLowerCase())
+        })
+    }
+
     return (
         <div>
             <label style={styles.label}>
                 <div>Search</div>
-                <input style={styles.input} type="text"/>
+                <input value={input} onChange={e => setInput(e.target.value)} style={styles.input} type="text"/>
             </label>
 
             <div className="btn" onClick={() => setType('posts')}>Posts</div>
             <div className="btn" onClick={() => setType('todos')}>Todos</div>
-            {posts.map(item => (
+            {sort().map(item => (
 /*                <div key={item.id}>
                     {item.id}.{item.title};
                 </div>*/

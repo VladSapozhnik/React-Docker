@@ -8,6 +8,7 @@ import AxiosDate from "./components/AxiosDate";
 import Redux from "./components/Redux";
 import Tabs from "./components/Tabs";
 import Accordion from "./components/Accordion";
+import Slider from "./components/Slider";
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
           <div className="container">
               <Tabs/>
               <Accordion/>
+              <Slider/>
               <Redux/>
               <AxiosDate/>
               <Form/>
