@@ -7,8 +7,9 @@ import Form from "./components/Form";
 import AxiosDate from "./components/AxiosDate";
 import Redux from "./components/Redux";
 import Tabs from "./components/Tabs";
-import Accordion from "./components/Accordion";
+import Accordion from "./components/Accordion/Accordion";
 import Slider from "./components/Slider";
+import Map from "./components/Map";
 
 function App() {
 
@@ -38,6 +39,7 @@ function App() {
               <Popup/>
               <Count onCreated={count} increment={increment} decrement={decrement} />
               <br/>
+              <Map/>
               {type}
               <div onClick={() => setType('users')}>users</div>
               <div onClick={() => setType('tabs')}>tabs</div>

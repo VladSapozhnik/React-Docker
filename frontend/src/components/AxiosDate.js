@@ -10,7 +10,7 @@ function AxiosDate () {
         axios.get(`https://jsonplaceholder.typicode.com/${type}?_limit=10`)
             .then(response => {
                 setPosts(response.data)
-            })
+            }).catch( (err) => console.log(err));
 
     }, [type])
 
