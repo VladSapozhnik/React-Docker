@@ -16,21 +16,21 @@ function Info () {
                 <AccordionItem>
                     <AccordionItemHeading>
                         <AccordionItemButton>
-                            Accardion Head 1
+                            Accordion Head 1
                         </AccordionItemButton>
                     </AccordionItemHeading>
                     <AccordionItemPanel>
-                        <p>Accardion content 1</p>
+                        <p>Accordion content 1</p>
                     </AccordionItemPanel>
                 </AccordionItem>
                 <AccordionItem>
                     <AccordionItemHeading>
                         <AccordionItemButton>
-                            Accardion Head 2
+                            Accordion Head 2
                         </AccordionItemButton>
                     </AccordionItemHeading>
                     <AccordionItemPanel>
-                        <p>Accardion content 2</p>
+                        <p>Accordion content 2</p>
                     </AccordionItemPanel>
                 </AccordionItem>
             </Accordion>
