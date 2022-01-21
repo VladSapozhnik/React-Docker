@@ -39,19 +39,18 @@ function Redux () {
     //         window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
     //     )
     // )
+
     const store = createStore(
         rootReducer,
         composeWithDevTools(
             applyMiddleware(thunk, logger),
         )
     )
-
     store.subscribe(() => {
         const state = store.getState()
         document.body.className = state.theme.value
         // setValue(state.counter)
     })
-
 
 
     // function logger (state) {

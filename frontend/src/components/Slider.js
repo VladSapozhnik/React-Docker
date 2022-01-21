@@ -27,15 +27,15 @@ function Slider () {
             img: 'images/1.jpg',
         },
         {
-            title: 'Legend 1',
+            title: 'Legend 2',
             img: 'images/1.jpg',
         },
         {
-            title: 'Legend 1',
+            title: 'Legend 3',
             img: 'images/1.jpg',
         },
         {
-            title: 'Legend 1',
+            title: 'Legend 4',
             img: 'images/1.jpg',
         }
     ]

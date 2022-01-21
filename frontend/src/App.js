@@ -10,6 +10,7 @@ import Tabs from "./components/Tabs";
 import Accordion from "./components/Accordion/Accordion";
 import Slider from "./components/Slider";
 import Map from "./components/Map";
+import ReduxPractice from "./components/Redux-practice/ReduxPractice";
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
   return (
       <div className="wrapper">
           <div className="container">
+              <ReduxPractice/>
               <Tabs/>
               <Accordion/>
               <Slider/>

@@ -44,7 +44,8 @@ function AxiosDate () {
 
     function sort () {
         return posts.filter((item) => {
-            return item.title.toLowerCase().match(input.toLowerCase())
+            // return item.title.toLowerCase().match(input.toLowerCase())
+            return item.title.toLowerCase().startsWith(input.toLowerCase())
         })
     }
 

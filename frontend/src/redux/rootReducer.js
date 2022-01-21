@@ -15,15 +15,28 @@ import {combineReducers} from "redux";
 //
 //     return state
 // }
-function counterReducer(state = 42, action) {
-    if (action.type === INCREMENT) {
-        return state + 1
-    } else if (action.type === DECREMENT) {
-        return state - 1
-    }
+// function counterReducer(state = 42, action) {
+//     if (action.type === INCREMENT) {
+//         return state + 1
+//     } else if (action.type === DECREMENT) {
+//         return state - 1
+//     }
+//
+//     return state
+// }
 
-    return state
-}
+const counterReducer = (state=42,action)=>{
+    switch(action.type) {
+        case INCREMENT:
+            return state+1;
+            break;
+        case DECREMENT:
+            return state-1;
+            break;
+        default:
+            return state;
+    }
+};
 
 const initialThemeState = {
     value: 'light'
