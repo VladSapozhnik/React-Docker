@@ -9,7 +9,7 @@ import Redux from "./components/Redux";
 import Tabs from "./components/Tabs";
 import Accordion from "./components/Accordion/Accordion";
 import Slider from "./components/Slider";
-import Map from "./components/Map";
+// import Map from "./components/Map";
 import ReduxPractice from "./components/Redux-practice/ReduxPractice";
 
 function App() {
@@ -41,7 +41,7 @@ function App() {
               <Popup/>
               <Count onCreated={count} increment={increment} decrement={decrement} />
               <br/>
-              <Map/>
+              {/*<Map/>*/}
               {type}
               <div onClick={() => setType('users')}>users</div>
               <div onClick={() => setType('tabs')}>tabs</div>

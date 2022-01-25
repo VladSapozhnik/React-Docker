@@ -1,5 +1,6 @@
 import {CHANGE_THEME, DECREMENT, INCREMENT} from "./types";
 import {combineReducers} from "redux";
+import {postsReducer} from "../components/Redux-practice/postsReducer";
 
 // export function rootReducer(state, actions) {
 //     if (actions.type === INCREMENT) {
@@ -54,5 +55,6 @@ function themeReducer(state = initialThemeState, action) {
 
 export const rootReducer = combineReducers({
     counter: counterReducer,
-    theme: themeReducer
+    theme: themeReducer,
+    posts: postsReducer
 })

@@ -1,5 +1,6 @@
 export const INCREMENT = 'INCREMENT'
 export const DECREMENT = 'DECREMENT'
 export const CHANGE_THEME = 'CHANGE_THEME'
+export const CREATE_POST = 'POST/CREATE_POST'
 /*
 export const ASYNC_INCREMENT = 'ASYNC_INCREMENT'*/

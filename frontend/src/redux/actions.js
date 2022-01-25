@@ -1,4 +1,4 @@
-import {INCREMENT, DECREMENT, CHANGE_THEME} from "./types";
+import {INCREMENT, DECREMENT, CHANGE_THEME, CREATE_POST} from "./types";
 
 export function increment () {
     return {
@@ -24,5 +24,12 @@ export function async_increment () {
             dispatch(increment())
         }, 2000)
 
+    }
+}
+
+export function createPost(post) {
+    return {
+        type:CREATE_POST,
+        payload: post
     }
 }
